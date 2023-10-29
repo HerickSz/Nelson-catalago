@@ -422,6 +422,7 @@ a img:hover {
     flex-direction: row;
     cursor: pointer;
     display: block;
+    transition: .5s;
 }
 
 
@@ -508,10 +509,14 @@ center {
     background-color: transparent;
     animation: bounce 1s infinite alternate;
     -webkit-animation: bounce 1s infinite alternate;
-    border: 5px solid #b6fabc;
-    border-radius: 50%;
+    border: 5px solid #00850b;
+    border-radius: 17%;
+    background-color: #00850b;
 }
 
+.whats:hover {
+    transform: scale(1.2)
+}
 
 /* Fim do contact */
 @keyframes bounce {
