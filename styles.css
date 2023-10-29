@@ -113,7 +113,7 @@ header {
 /* FIM DO TEMA */
 
 .logo-ney {
-    width: 200px;
+    width: 170px;
     height: auto;
 }
 
@@ -316,8 +316,25 @@ h2 {
     transition: .5s;
 }
 
+.card-imgg img {
+    width: 100%;
+    height: 400px;
+}
+
 .cards:hover {
     transform: scale3d(1.1, 1.1, 1);
+}
+
+.cards1 {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow-color);
+    background: var(--card-background);
+    transition: .5s;
 }
 
 .card-img img {
@@ -351,8 +368,8 @@ button {
     background: var(--button-background-border);
     border-radius: 30px;
     border: none;
-    width: 150px;
-    height: 30px;
+    width: 250px;
+    height: 35px;
     margin: 15px 0;
     cursor: pointer;
     font-weight: 500;
@@ -389,7 +406,7 @@ a img {
 }
 
 a img:hover {
-    transform: scale(1.4)
+    transform: scale(1.2)
 }
 
 .whats {
@@ -482,6 +499,9 @@ a img:hover {
     width: 50px;
 }
 
+center {
+    width: 100%;
+}
 
 /* Fim do contact */
 
@@ -523,7 +543,22 @@ a img:hover {
         cursor: pointer;
     }
 
+    .cards1 {
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--shadow-color);
+        background: var(--card-background);
+        transition: .5s;
+    }
 
+    .card-imgg img {
+        width: 100vw;
+        height: 100%;
+    }
 }
 
 @media screen and (max-width:950px) {
