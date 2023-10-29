@@ -415,14 +415,15 @@ a img:hover {
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: #72FF29;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     cursor: pointer;
+    display: block;
 }
+
 
 .arrow {
     border: solid #000000;
@@ -503,7 +504,25 @@ center {
     width: 100%;
 }
 
+.whats img {
+    background-color: transparent;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+    border: 5px solid #b6fabc;
+    border-radius: 50%;
+}
+
+
 /* Fim do contact */
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
 
 @media screen and (max-width: 1100px) {
     .navegacao p {
@@ -534,7 +553,6 @@ center {
         right: 20px;
         width: 50px;
         height: 50px;
-        background-color: #72FF29;
         border-radius: 50%;
         display: flex;
         align-items: center;
