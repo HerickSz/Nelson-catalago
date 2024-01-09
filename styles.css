@@ -15,7 +15,7 @@
     --shadow-color: 1px 7px 25px 1px rgba(0, 181, 0, 0.5);
     --card-background: transparent;
     --text-color: black;
-
+    --colorform: var(#00ad00);
     --button-background-border: rgba(0, 181, 0, 0.8);
     --button-background-hover: rgba(6, 181, 0, 0.1);
 
@@ -32,7 +32,7 @@
     --shadow-color: 1px 7px 25px 1px rgba(58, 242, 119, 0.5);
     --card-background: rgba(7, 4, 33, 1);
     --text-color: white;
-
+    --colorform: #2A2953;
     --button-background-border: rgb(114, 255, 41, .8);
     --button-background-hover: rgba(112, 255, 41, 0.192);
 
@@ -545,7 +545,7 @@ fieldset {
 }
 
 .formulario {
-    background-color: #00ad00;
+    background-color: var(--colorform);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     color: #fff;
@@ -553,6 +553,7 @@ fieldset {
     flex-direction: row;
     align-content: center;
     margin-top: 5%;
+    border-radius: 100px;
 }
 
 form {
@@ -651,6 +652,10 @@ select:focus {
     background-color: #004200;
     font-size: .9em;
     border-radius: 3px;
+}
+
+::marker {
+    color: transparent;
 }
 
 .botao1:hover {
