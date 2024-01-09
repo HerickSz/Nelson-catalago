@@ -210,17 +210,20 @@ h2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: #00ad00;
+    color: #ffffff;
     height: 95vh;
     background: #00ad00;
 }
 
-.title-about,
+.title-about {
+    color: #ffffff;
+    font-weight: 700;
+    width: 50%;
+}
+
 .title-contact {
     color: #00ad00;
-    font-weight: 700;
-    border-bottom: 1px solid #00ad00;
-    width: 50%;
+    border-bottom: 1px solid #000000;
 }
 
 .container-about {
