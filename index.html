@@ -281,6 +281,68 @@
 
             </div>
         </section>
+        <div class="formulario" name="formulario">
+            <section id="formulario" class="fundoForm">
+                <h1>Apresentação</h1>
+                <p>Complete com suas informações</p>
+                <br>
+            </section>
+
+            <form action="https://formsubmit.co/herickgamesplays@gmail.com" method="POST">
+
+                <div class="campo">
+                    <label for="nome"><strong>Nome Completo</strong></label>
+                    <input type="text" name="Nome" id="nome" required>
+                    <label><strong>Número</strong></label>
+                    <input type="number" name="Numero" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="Email" id="email" required>
+                </div>
+
+                <div class="campo2">
+                    <label for="Motivo"><strong>Motivo: </strong></label>
+                    <label>
+                        <input type="radio" name="Motivo" value="matricula" checked>apresentar
+                    </label>
+                    <label>
+                        <input type="radio" name="Motivo" value="Pergunta">Pergunta
+                    </label>
+                    <label>
+                        <input type="radio" name="Motivo" value="Outro">Outro
+                    </label>
+                </div>
+
+                <div class="campo">
+                    <label for="Ensino"><strong>Serviços</strong></label>
+                    <select type="radio" name="Ensino" id="Ensino" required>
+                        <option selected disabled value="Ensino">Selecione</option>
+                        <option>Boleto</option>
+                        <option>Atendimento</option>
+                        <option>Duvida</option>
+                        <option>contatos</option>
+                    </select>
+                </div>
+
+                <fieldset class="grupo">
+                    <div id="checktermo">
+                        <label><strong>Marcando aqui, você concorda com todos os termos de
+                                uso:</strong></label><br><br>
+                        <input type="checkbox" id="termo" name="Termos" value="Aceito" required>
+                        <label for="campo1"> Eu concordo</label>
+                    </div>
+                </fieldset>
+
+                <div class="campo">
+                    <br>
+                    <textarea rows="6" name="Comentário" style="resize:none;"></textarea>
+                </div>
+                <button class="botao" type="submit" onsubmit="">Concluído</button>
+
+            </form>
+        </div>
         <section id="contact">
             <div class="container-title">
                 <h2 class="title-contact">CONTATOS</h2>

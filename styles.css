@@ -8,7 +8,7 @@
 :root {
     --header-background: linear-gradient(90deg, rgb(57, 151, 33) 30%, rgb(21, 180, 0) 100%);
     --subtitle-color: #5ff23a;
-    --about-bg: linear-gradient(90deg, rgb(16, 204, 10) 30%, rgb(33, 151, 68) 100%);
+    --about-bg: linear-gradient(90deg, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 100%);
     --title-color: black;
     --subtitle-project: black;
     --line-color: 1px solid black;
@@ -210,16 +210,16 @@ h2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
+    color: #00ad00;
     height: 95vh;
-    background: var(--about-bg);
+    background: #00ad00;
 }
 
 .title-about,
 .title-contact {
-    color: white;
+    color: #00ad00;
     font-weight: 700;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #00ad00;
     width: 50%;
 }
 
@@ -518,6 +518,211 @@ center {
     transform: scale(1.2)
 }
 
+.fundoForm h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: #ffffff;
+    margin-left: 7%;
+}
+
+.fundoForm p {
+    text-align: center;
+    font-family: sans-serif;
+    color: #ffffff;
+    margin-left: 5%;
+}
+
+#checktermo {
+    display: inline-block;
+}
+
+
+fieldset {
+    border: 0;
+}
+
+.formulario {
+    background-color: #00ad00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 5%;
+}
+
+form {
+    resize: none;
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 200px;
+}
+
+
+input,
+select,
+textarea,
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #000000;
+    border-radius: none;
+}
+
+.grupo:before,
+.grupo:after {
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+
+
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #fff;
+    font-size: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="number"],
+.campo select,
+.campo textarea {
+    padding: 0.2em;
+    border: 2px solid #ffd13bd8;
+    display: block;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="number"] {
+    width: 20vw;
+}
+
+.campo textarea {
+    padding: 0.2em;
+    display: block;
+    width: 0vw;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo select:hover,
+.campo textarea:hover,
+.campo input:hover[type="text"],
+.campo input:hover[type="email"],
+.campo input:hover[type="number"] {
+    background: #e4e4fc;
+}
+
+.botao1 {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #004200;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+.botao1:hover {
+    background-color: #f00;
+    transition: all 0.4s ease-in-out;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: #004e00;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    position: left;
+    top: 90%;
+    left: 50%;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: rgb(72, 255, 35);
+    transition: all 0.4s ease-in-out;
+}
+
+
+.formulario {
+    background-color: #00ad00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #fff;
+    display: list-item;
+    padding: 5%;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 5%;
+}
+
+#formulario.fundoForm {
+    width: 100%;
+    height: 10%;
+    max-height: 88px;
+    background-size: inherit;
+}
+
+.campo textarea {
+    width: 100%;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="number"],
+.campo select {
+    display: inline-block;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="number"] {
+    width: 100%;
+}
+
+.campo2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin-bottom: 1em;
+    width: 40%;
+}
+
 /* Fim do contact */
 @keyframes bounce {
     from {
@@ -669,9 +874,77 @@ center {
         width: 85%;
         box-shadow: 1px 7px 25px 1px rgb(255 255 255 / 50%);
     }
+
+    .campo input[type="text"],
+    .campo input[type="email"],
+    .campo input[type="number"] {
+        width: 60vw;
+    }
+
+    .campo {
+        margin-bottom: 1em;
+        width: 90vw;
+    }
+
+    .campo textarea {
+        width: 70%;
+        margin-left: 10px;
+        display: inline-block;
+    }
+
+    form {
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width:700px) {
+    .formulario {
+        background-color: #00ad00;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        color: #fff;
+        display: list-item;
+        padding: 5%;
+        flex-direction: row;
+        align-content: center;
+        margin-top: 5%;
+    }
+
+    #formulario.fundoForm {
+        width: 100%;
+        height: 10%;
+        max-height: 88px;
+        background-size: inherit;
+    }
+
+    .campo textarea {
+        width: 90%;
+        margin-left: 10px;
+        display: inline-block;
+    }
+
+    .campo input[type="text"],
+    .campo input[type="email"],
+    .campo input[type="number"],
+    .campo select {
+        display: inline-block;
+    }
+
+    .campo input[type="text"],
+    .campo input[type="email"],
+    .campo input[type="number"] {
+        width: 80vw;
+    }
+
+    .campo2 {
+        margin-bottom: 30px;
+    }
+
+    .campo {
+        margin-bottom: 1em;
+        width: 90vw;
+    }
+
     .title-card {
         font-size: 17px;
         color: var(--text-color);
