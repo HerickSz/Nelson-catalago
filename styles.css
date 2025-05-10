@@ -1047,5 +1047,8 @@ select:focus {
     .cards:hover {
         transform: none;
     }
+    #about{
+        margin-top: 100px;
+    }
 
 }
