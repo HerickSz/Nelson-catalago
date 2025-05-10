@@ -6,35 +6,35 @@
 }
 
 :root {
-    --header-background: linear-gradient(90deg, rgb(57, 151, 33) 30%, rgb(21, 180, 0) 100%);
-    --subtitle-color: #5ff23a;
+    --header-background: linear-gradient(90deg, rgb(34, 141, 118) 30%, rgb(0, 180, 90) 100%);
+    --subtitle-color: #34, 141, 118;
     --about-bg: linear-gradient(90deg, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 100%);
     --title-color: black;
     --subtitle-project: black;
     --line-color: 1px solid black;
-    --shadow-color: 1px 7px 25px 1px rgba(0, 181, 0, 0.5);
+    --shadow-color: 1px 7px 25px 1px rgb(34, 141, 118);
     --card-background: transparent;
     --text-color: black;
-    --colorform: var(#00ad00);
-    --button-background-border: rgba(0, 181, 0, 0.8);
+    --colorform: var(#00ad8d);
+    --button-background-border: rgba(34, 141, 118);
     --button-background-hover: rgba(6, 181, 0, 0.1);
 
 }
 
 .dark-mode:root {
     --header-background: rgba(7, 4, 33, 1);
-    --subtitle-color: rgb(114, 255, 41);
+    --subtitle-color: rgb(34, 141, 118);
     --body-bg: #2A2953;
     --title-color: #FFFFFF;
     --about-bg: rgba(7, 4, 33, 1);
     --subtitle-project: #FFFFFF;
     --line-color: 1px solid white;
-    --shadow-color: 1px 7px 25px 1px rgba(58, 242, 119, 0.5);
+    --shadow-color: 1px 7px 25px 1px rgb(34, 141, 118);
     --card-background: rgba(7, 4, 33, 1);
     --text-color: white;
     --colorform: #2A2953;
-    --button-background-border: rgb(114, 255, 41, .8);
-    --button-background-hover: rgba(112, 255, 41, 0.192);
+    --button-background-border: rgb(34, 141, 118);
+    --button-background-hover: rgb(24, 99, 83);
 
 }
 
@@ -102,11 +102,11 @@ header {
 }
 
 .fa-moon {
-    color: #f1c40f;
+    color: rgba(34, 141, 118);
 }
 
 .fa-sun {
-    color: #f39c12;
+    color: rgba(34, 141, 118);
 }
 
 
@@ -194,12 +194,17 @@ h2 {
 }
 
 .container img {
-    width: 150px;
+    width: 300px;
     transition: 0.3s ease-in;
 }
 
 .container img:hover {
     transform: scale(1.2);
+}
+
+.container-img img
+{
+    padding: 20px;
 }
 
 
@@ -212,7 +217,7 @@ h2 {
     flex-direction: column;
     color: #ffffff;
     height: 95vh;
-    background: #00ad00;
+    background: rgba(34, 141, 118);
 }
 
 .title-about {
@@ -222,8 +227,8 @@ h2 {
 }
 
 .title-contact {
-    color: #00ad00;
-    border-bottom: 1px solid #000000;
+    color: #0d8272;
+    border-bottom: 1px solid rgba(34, 141, 118);
 }
 
 .container-about {
@@ -245,7 +250,7 @@ h2 {
 }
 
 .logo {
-    background-color: #00ad00;
+    background-color: rgba(34, 141, 118);
 }
 
 .bem-vindos {
@@ -393,7 +398,7 @@ button:hover {
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: #72FF29;
+    background-color: rgba(34, 141, 118);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -430,7 +435,7 @@ a img:hover {
 
 
 .arrow {
-    border: solid #000000;
+    border: solid #ffffff;
     border-width: 0 6px 6px 0;
     padding: 5px;
     display: inline-block;
@@ -453,7 +458,7 @@ a img:hover {
 }
 
 .icon {
-    background-color: #00ad00;
+    background-color: rgb(11, 133, 107);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 1px 7px 25px 1px rgba(243, 243, 243, 0.5);
@@ -512,9 +517,9 @@ center {
     background-color: transparent;
     animation: bounce 1s infinite alternate;
     -webkit-animation: bounce 1s infinite alternate;
-    border: 5px solid #00850b;
+    border: 5px solid rgba(34, 141, 118);
     border-radius: 17%;
-    background-color: #00850b;
+    background-color: rgba(34, 141, 118);
 }
 
 .whats:hover {
@@ -545,7 +550,7 @@ fieldset {
 }
 
 .formulario {
-    background-color: var(--colorform);
+    background-color: rgba(34, 141, 118);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     color: #fff;
@@ -570,7 +575,6 @@ textarea,
 button {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    color: #000000;
     border-radius: none;
 }
 
@@ -617,7 +621,7 @@ select:focus {
 .campo select,
 .campo textarea {
     padding: 0.2em;
-    border: 2px solid #ffd13bd8;
+    border: 2px solid #003535d8;
     display: block;
 }
 
@@ -665,7 +669,7 @@ select:focus {
 
 .botao {
     font-size: 1.2em;
-    background: #004e00;
+    background: rgb(18, 82, 68);
     border: 0;
     margin-bottom: 1em;
     color: #ffffff;
@@ -677,13 +681,13 @@ select:focus {
 }
 
 .botao:hover {
-    background-color: rgb(72, 255, 35);
+    background-color: rgb(8, 255, 218);
     transition: all 0.4s ease-in-out;
 }
 
 
 .formulario {
-    background-color: #00ad00;
+    background-color: rgba(34, 141, 118);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     color: #fff;
@@ -907,7 +911,7 @@ select:focus {
 
 @media screen and (max-width:700px) {
     .formulario {
-        background-color: #00ad00;
+        background-color: rgba(34, 141, 118);
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1em;
         color: #fff;
